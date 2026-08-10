@@ -13,7 +13,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { bookings } from '@/data/bookings';
 import { reviews } from '@/data/reviews';
 import { categories } from '@/data/categories';

@@ -6,7 +6,7 @@ import Animated, { useSharedValue, useAnimatedStyle, withSpring, withDelay, with
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { Button } from '@/components/Button';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/ui/Logo';
 import { Check, Download, Share2, Home } from 'lucide-react-native';
 
 export default function BookingSuccessScreen() {

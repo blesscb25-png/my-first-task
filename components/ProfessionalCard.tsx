@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Image, ViewStyle } from 'react-native';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow } from '@/constants/Typography';
 import { Star, BadgeCheck, MapPin } from 'lucide-react-native';
-import { Rating } from './rating';
+import { Rating } from './Rating';
 import { Badge } from './Badge';
 import { Professional } from '@/types';
 import { useStore } from '@/store/useStore';

@@ -4,7 +4,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { categories } from '@/data/categories';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { ProfessionalCard } from '@/components/ProfessionalCard';
 import { Header } from '@/components/Header';
 import { EmptyState } from '@/components/EmptyState';
@@ -60,7 +60,7 @@ export default function CategoryScreen() {
         contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }}
         ItemSeparatorComponent={() => <View style={{ height: 14 }} />}
         renderItem={({ item }) => (
-          <ProfessionalCard professional={item} variant="horizontal" onPress={() => router.push(`/professional/${item.id}`)} />
+          <ProfessionalCard professional={item} variant="horizontal" onPress={() => router.push(`./professional/${item.id}`)} />
         )}
         ListEmptyComponent={
           <EmptyState

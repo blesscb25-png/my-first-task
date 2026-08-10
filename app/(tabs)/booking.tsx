@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { bookings } from '@/data/bookings';
-import { BookingCard } from '@/components/ui/BookingCard';
+import { BookingCard } from '@/components/BookingsCard';
 import { Header } from '@/components/Header';
 import { EmptyState } from '@/components/EmptyState';
 import { Button } from '@/components/Button';
@@ -44,14 +44,14 @@ export default function BookingsScreen() {
         contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 24 }}
         ItemSeparatorComponent={() => <View style={{ height: 14 }} />}
         renderItem={({ item }) => (
-          <BookingCard booking={item} onPress={() => router.push(`/booking-details/${item.id}`)} />
+          <BookingCard booking={item} onPress={() => router.push(`./booking-details/${item.id}`)} />
         )}
         ListEmptyComponent={
           <EmptyState
             icon={<Calendar size={36} color={Colors.primary} />}
             title={`No ${activeTab} bookings`}
             subtitle="Your booking history will appear here"
-            action={<Button title="Book a Service" onPress={() => router.push('/(tabs)')} size="md" />}
+            action={<Button title="Book a Service" onPress={() => router.push('./(tabs)')} size="md" />}
           />
         }
       />

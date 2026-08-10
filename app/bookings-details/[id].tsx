@@ -123,11 +123,11 @@ export default function BookingDetailsScreen() {
         {booking.status === 'completed' && (
           <>
             <Button title="Write Review" variant="outline" size="md" onPress={() => router.push('/reviews')} />
-            <Button title="Book Again" size="md" onPress={() => router.push(`/professional/${booking.professionalId}`)} />
+            <Button title="Book Again" size="md" onPress={() => router.push(`./professional/${booking.professionalId}`)} />
           </>
         )}
         {booking.status === 'cancelled' && (
-          <Button title="Book Again" fullWidth size="lg" onPress={() => router.push(`/professional/${booking.professionalId}`)} />
+          <Button title="Book Again" fullWidth size="lg" onPress={() => router.push(`./professional/${booking.professionalId}`)} />
         )}
       </View>
     </View>

@@ -7,7 +7,7 @@ import { Button } from '@/components/Button';
 import { Input } from '@/components/Input';
 import { Logo } from '@/components/ui/Logo';
 import { useStore } from '@/store/useStore';
-import { Mail, Lock, Eye, EyeOff, Apple, Facebook, Check } from 'lucide-react-native';
+import { Mail, Lock, Eye, EyeOff, Apple, Check } from 'lucide-react-native';
 
 export default function LoginScreen() {
   const router = useRouter();
@@ -89,7 +89,7 @@ export default function LoginScreen() {
           <Text style={styles.socialLabel}>Apple</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.socialBtn} onPress={() => { setAuthenticated(true); router.replace('/(tabs)'); }}>
-          <Facebook size={20} color={'#1877F2'} />
+          <Text style={styles.facebookIcon}>f</Text>
           <Text style={styles.socialLabel}>Facebook</Text>
         </TouchableOpacity>
       </View>
@@ -200,6 +200,12 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: '600',
     color: Colors.textPrimary,
+  },
+  facebookIcon: {
+    fontSize: 22,
+    lineHeight: 20,
+    fontWeight: '800',
+    color: '#1877F2',
   },
   footer: {
     flexDirection: 'row',

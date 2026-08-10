@@ -4,7 +4,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { conversations, messagesByConversation } from '@/data/mockData';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { ChatBubble } from '@/components/ChatBubble';
 import { Send, Phone, Video, ChevronLeft, Plus, Mic, Image as ImageIcon } from 'lucide-react-native';
 

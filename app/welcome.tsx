@@ -5,9 +5,9 @@ import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Typography, Shadow } from '@/constants/Typography';
 import { Button } from '@/components/Button';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/ui/Logo';
 import { useStore } from '@/store/useStore';
-import { Mail, Apple, Facebook } from 'lucide-react-native';
+import { Mail, Apple } from 'lucide-react-native';
 import { TouchableOpacity } from 'react-native';
 
 export default function WelcomeScreen() {
@@ -60,7 +60,7 @@ export default function WelcomeScreen() {
             <Apple size={20} color={Colors.textPrimary} />
           </TouchableOpacity>
           <TouchableOpacity style={styles.socialBtn} onPress={() => { setAuthenticated(true); router.replace('/(tabs)'); }}>
-            <Facebook size={20} color={'#1877F2'} />
+            <Text style={styles.facebookIcon}>f</Text>
           </TouchableOpacity>
         </View>
 
@@ -150,6 +150,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     ...Shadow.sm,
+  },
+  facebookIcon: {
+    fontSize: 24,
+    fontWeight: '800',
+    color: '#1877F2',
   },
   guestBtn: {
     alignItems: 'center',

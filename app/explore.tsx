@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TouchableOpacity, ScrollView, FlatList, Dimensi
 import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { ProfessionalCard } from '@/components/ProfessionalCard';
 import { Header } from '@/components/Header';
 import { EmptyState } from '@/components/EmptyState';
@@ -67,7 +67,7 @@ export default function ExploreScreen() {
           <Text style={styles.mapSubtext}>{professionals.length} professionals nearby</Text>
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 16, paddingTop: 24 }} style={{ width: '100%' }}>
             {sorted.map((pro) => (
-              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`/professional/${pro.id}`)} />
+              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`./professional/${pro.id}`)} />
             ))}
           </ScrollView>
         </View>
@@ -84,7 +84,7 @@ export default function ExploreScreen() {
               professional={item}
               variant={viewMode === 'grid' ? 'default' : 'horizontal'}
               style={viewMode === 'grid' ? { flex: 1 } : undefined}
-              onPress={() => router.push(`/professional/${item.id}`)}
+              onPress={() => router.push(`./professional/${item.id}`)}
             />
           )}
           ListEmptyComponent={<EmptyState title="No professionals found" subtitle="Try adjusting your filters" />}

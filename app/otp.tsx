@@ -5,7 +5,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Typography, Shadow } from '@/constants/Typography';
 import { Button } from '@/components/Button';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/ui/Logo';
 import { useStore } from '@/store/useStore';
 
 const OTP_LENGTH = 4;

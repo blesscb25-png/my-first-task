@@ -4,7 +4,7 @@ import { useRouter, useLocalSearchParams } from 'expo-router';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { paymentMethods } from '@/data/mockData';
 import { Button } from '@/components/Button';
 import { Header } from '@/components/Header';
@@ -41,7 +41,7 @@ export default function BookingScreen() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      router.replace('/booking-success');
+      router.replace('./booking-success');
     }, 1500);
   };
 

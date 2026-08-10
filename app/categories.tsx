@@ -4,7 +4,7 @@ import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { categories } from '@/data/categories';
-import { CategoryCard } from '@/components/CategoryCard';
+import { CategoryCard } from '@/components/Categorycard';
 import { Header } from '@/components/Header';
 import { Search } from 'lucide-react-native';
 

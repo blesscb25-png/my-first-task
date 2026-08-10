@@ -61,8 +61,8 @@ export default function NotificationsScreen() {
         ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
         renderItem={({ item }) => (
           <NotificationCard notification={item} onPress={() => {
-            if (item.type === 'booking') router.push('/(tabs)/bookings');
-            else if (item.type === 'message') router.push('/(tabs)/chat');
+            if (item.type === 'booking') router.push('../(tabs)/bookings');
+            else if (item.type === 'message') router.push('./(tabs)/chat');
             else if (item.type === 'offer' || item.type === 'promotion') router.push('/promotions');
           }} />
         )}

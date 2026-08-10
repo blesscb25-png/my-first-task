@@ -14,12 +14,12 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useRouter } from 'expo-router';
 import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
-import { professionals } from '@/data/professionals';
+import { professionals } from '@/data/professional';
 import { categories } from '@/data/categories';
 import { promotions } from '@/data/mockData';
 import { reviews } from '@/data/reviews';
 import { ProfessionalCard } from '@/components/ProfessionalCard';
-import { CategoryCard } from '@/components/CategoryCard';
+import { CategoryCard } from '@/components/Categorycard';
 import { Rating } from '@/components/Rating';
 import { Badge } from '@/components/Badge';
 import { useStore } from '@/store/useStore';
@@ -62,7 +62,7 @@ export default function HomeScreen() {
               <Text style={styles.greeting}>Good Morning</Text>
               <Text style={styles.userName}>{user?.firstName} {user?.lastName}</Text>
             </View>
-            <TouchableOpacity style={styles.bellBtn} onPress={() => router.push('/notifications')}>
+            <TouchableOpacity style={styles.bellBtn} onPress={() => router.push('/notification')}>
               <Bell size={20} color={Colors.white} />
               <View style={styles.bellDot} />
             </TouchableOpacity>
@@ -109,21 +109,21 @@ export default function HomeScreen() {
           <SectionHeader title="Popular Professionals" onSeeAll={() => router.push('/explore')} />
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 16, gap: 14 }}>
             {topRated.map((pro) => (
-              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`/professional/${pro.id}`)} />
+              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`./professional/${pro.id}`)} />
             ))}
           </ScrollView>
 
           <SectionHeader title="Nearby Professionals" onSeeAll={() => router.push('/explore')} />
           <View style={styles.grid}>
             {nearby.slice(0, 4).map((pro) => (
-              <ProfessionalCard key={pro.id} professional={pro} onPress={() => router.push(`/professional/${pro.id}`)} />
+              <ProfessionalCard key={pro.id} professional={pro} onPress={() => router.push(`./professional/${pro.id}`)} />
             ))}
           </View>
 
           <SectionHeader title="Featured Services" onSeeAll={() => router.push('/categories')} />
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 16, gap: 12 }}>
             {featured.flatMap((p) => p.services.slice(0, 1).map((s) => (
-              <TouchableOpacity key={s.id} style={styles.serviceCard} onPress={() => router.push(`/professional/${p.id}`)}>
+              <TouchableOpacity key={s.id} style={styles.serviceCard} onPress={() => router.push(`./professional/${p.id}`)}>
                 <Image source={{ uri: p.coverImage }} style={styles.serviceImage} />
                 <View style={styles.serviceInfo}>
                   <Text style={styles.serviceName} numberOfLines={1}>{s.name}</Text>
@@ -140,14 +140,14 @@ export default function HomeScreen() {
           <SectionHeader title="Top Rated" onSeeAll={() => router.push('/explore')} />
           <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ paddingHorizontal: 16, gap: 14 }}>
             {topRated.map((pro) => (
-              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`/professional/${pro.id}`)} />
+              <ProfessionalCard key={pro.id} professional={pro} variant="horizontal" onPress={() => router.push(`./professional/${pro.id}`)} />
             ))}
           </ScrollView>
 
           <SectionHeader title="Recommended For You" onSeeAll={() => router.push('/explore')} />
           <View style={styles.grid}>
             {recommended.slice(0, 4).map((pro) => (
-              <ProfessionalCard key={pro.id} professional={pro} onPress={() => router.push(`/professional/${pro.id}`)} />
+              <ProfessionalCard key={pro.id} professional={pro} onPress={() => router.push(`./professional/${pro.id}`)} />
             ))}
           </View>
 

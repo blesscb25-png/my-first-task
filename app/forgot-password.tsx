@@ -5,7 +5,7 @@ import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Shadow, Typography } from '@/constants/Typography';
 import { Button } from '@/components/Button';
 import { Input } from '@/components/Input';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/ui/Logo';
 import { Mail } from 'lucide-react-native';
 
 export default function ForgotPasswordScreen() {

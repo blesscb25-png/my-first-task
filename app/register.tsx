@@ -5,7 +5,7 @@ import { Colors } from '@/constants/Colors';
 import { Spacing, Radius, Typography, Shadow } from '@/constants/Typography';
 import { Button } from '@/components/Button';
 import { Input } from '@/components/Input';
-import { Logo } from '@/components/Logo';
+import { Logo } from '@/components/ui/Logo';
 import { useStore } from '@/store/useStore';
 import { Mail, Lock, Eye, EyeOff, Phone, User, MapPin, Camera, Check } from 'lucide-react-native';
 
