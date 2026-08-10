@@ -1,0 +1,28 @@
+import { Category } from '@/types';
+
+export const categories: Category[] = [
+  { id: 'cat_1', name: 'Nails', icon: '💅', color: '#FF6B9D', gradient: ['#FF6B9D', '#FF8A80'], count: 234, image: 'https://images.pexels.com/photos/3997388/pexels-photo-3997388.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_2', name: 'Barber', icon: '✂️', color: '#0A5BFF', gradient: ['#0A5BFF', '#102B7B'], count: 189, image: 'https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_3', name: 'Hair', icon: '💇', color: '#9B59B6', gradient: ['#9B59B6', '#6C3483'], count: 312, image: 'https://images.pexels.com/photos/3738352/pexels-photo-3738352.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_4', name: 'Electrician', icon: '⚡', color: '#F39C12', gradient: ['#F39C12', '#E67E22'], count: 145, image: 'https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_5', name: 'Plumber', icon: '🔧', color: '#1ABC9C', gradient: ['#1ABC9C', '#16A085'], count: 98, image: 'https://images.pexels.com/photos/8005397/pexels-photo-8005397.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_6', name: 'Cleaner', icon: '🧹', color: '#3498DB', gradient: ['#3498DB', '#2980B9'], count: 276, image: 'https://images.pexels.com/photos/4107120/pexels-photo-4107120.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_7', name: 'Mechanic', icon: '🔩', color: '#E74C3C', gradient: ['#E74C3C', '#C0392B'], count: 167, image: 'https://images.pexels.com/photos/3807517/pexels-photo-3807517.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_8', name: 'Tutor', icon: '📚', color: '#27AE60', gradient: ['#27AE60', '#219A52'], count: 203, image: 'https://images.pexels.com/photos/4144099/pexels-photo-4144099.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_9', name: 'Painter', icon: '🎨', color: '#8E44AD', gradient: ['#8E44AD', '#7D3C98'], count: 88, image: 'https://images.pexels.com/photos/1571457/pexels-photo-1571457.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_10', name: 'Photographer', icon: '📸', color: '#2C3E50', gradient: ['#2C3E50', '#1A252F'], count: 156, image: 'https://images.pexels.com/photos/1264210/pexels-photo-1264210.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_11', name: 'Makeup', icon: '💄', color: '#E91E63', gradient: ['#E91E63', '#C2185B'], count: 198, image: 'https://images.pexels.com/photos/3997390/pexels-photo-3997390.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_12', name: 'Massage', icon: '💆', color: '#FF8A00', gradient: ['#FF8A00', '#E65100'], count: 124, image: 'https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_13', name: 'Spa', icon: '🧖', color: '#00BCD4', gradient: ['#00BCD4', '#0097A7'], count: 89, image: 'https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_14', name: 'Tailor', icon: '🪡', color: '#607D8B', gradient: ['#607D8B', '#455A64'], count: 67, image: 'https://images.pexels.com/photos/3768005/pexels-photo-3768005.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_15', name: 'Carpenter', icon: '🪚', color: '#795548', gradient: ['#795548', '#5D4037'], count: 112, image: 'https://images.pexels.com/photos/1094770/pexels-photo-1094770.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_16', name: 'Moving', icon: '🚚', color: '#FF5722', gradient: ['#FF5722', '#E64A19'], count: 78, image: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_17', name: 'PC Repair', icon: '💻', color: '#37474F', gradient: ['#37474F', '#263238'], count: 134, image: 'https://images.pexels.com/photos/3987020/pexels-photo-3987020.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_18', name: 'Phone Repair', icon: '📱', color: '#0288D1', gradient: ['#0288D1', '#01579B'], count: 201, image: 'https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_19', name: 'Designer', icon: '🎯', color: '#AD1457', gradient: ['#AD1457', '#880E4F'], count: 95, image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_20', name: 'Web Dev', icon: '🌐', color: '#1565C0', gradient: ['#1565C0', '#0D47A1'], count: 183, image: 'https://images.pexels.com/photos/1181290/pexels-photo-1181290.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_21', name: 'Chef', icon: '👨‍🍳', color: '#E53935', gradient: ['#E53935', '#B71C1C'], count: 56, image: 'https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_22', name: 'Yoga', icon: '🧘', color: '#7B1FA2', gradient: ['#7B1FA2', '#4A148C'], count: 88, image: 'https://images.pexels.com/photos/868757/pexels-photo-868757.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_23', name: 'Fitness', icon: '💪', color: '#2E7D32', gradient: ['#2E7D32', '#1B5E20'], count: 142, image: 'https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=400' },
+  { id: 'cat_24', name: 'Laundry', icon: '👕', color: '#0097A7', gradient: ['#0097A7', '#006064'], count: 76, image: 'https://images.pexels.com/photos/5591579/pexels-photo-5591579.jpeg?auto=compress&cs=tinysrgb&w=400' },
+];
